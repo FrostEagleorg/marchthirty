@@ -1,5 +1,5 @@
-git config --global user.email "david@frosteagle.com"
-git config --global user.name "David"
-
 on: push
 name: Really cool demo
+jobs:
+    build-job:
+        name: Build .NET project
