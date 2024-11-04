@@ -14,4 +14,4 @@ jobs:
                 dotnet publish \
                 --configuration Release \
                 --output out
-            name: Publish .NET web app      
+              name: Publish .NET web app      
