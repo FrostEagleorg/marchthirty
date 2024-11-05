@@ -5,6 +5,8 @@
 
 # Exclude output folder
 [Oo]ut/
+.azure/
+
 # dotenv files
 .env
 

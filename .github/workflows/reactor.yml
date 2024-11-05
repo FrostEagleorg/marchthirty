@@ -1,6 +1,15 @@
 on: push
 name: Really cool demo
 jobs:
+    push-to-azure:
+        name: :Publish Azure resources
+        runs-on: windows-latest
+        steps:
+            - uses: actions/checkout@V3
+              name: checkout code
+            - uses: azure/login@v2 
+              with:
+                creds: ${{secrets.AZURE_CREDENTIALS }}
     build-job:
         name: Build .NET project
         runs-on: ubuntu-latest
