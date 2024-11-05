@@ -5,7 +5,7 @@ jobs:
         name: :Publish Azure resources
         runs-on: windows-latest
         steps:
-            - uses: actions/checkout@V3
+            - uses: actions/checkout@V4
               name: checkout code
             - uses: azure/login@v2 
               with:
